@@ -1,14 +1,13 @@
+import type { UserRole } from './user';
 
+export type { UserRole };
 
-export type UserRole = 'ADMIN' | 'CLIENT'
 export interface LoginFormData {
   email: string;
   password: string;
 }
 
-
 export interface AuthSessionUser {
-
   id: string;
   name: string;
   email: string;
